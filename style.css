@@ -141,13 +141,16 @@ img { max-width: 100%; }
 /* Avatar */
 .hero-visual { display: flex; justify-content: center; align-items: center; }
 .avatar-img {
-    width: 180px !important;
-    height: 180px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
-    position: absolute !important;
-    top: 10px;
-    left: 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     z-index: 2;
 }
 .avatar-container {
