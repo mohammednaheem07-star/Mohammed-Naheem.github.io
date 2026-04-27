@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed — Personal Portfolio</title>
+    <meta name="description" content="Portfolio of Mohamed — achievements, qualifications, skills, and projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo"><span class="lb">&lt;</span>M<span class="lb">/&gt;</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#qualifications" class="nav-link">Qualifications</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle"
+                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting"><span class="wave">👋</span> Hello, I'm</p>
+                <h1 class="hero-name">Mohamed Naheem </h1>
+                <div class="hero-title-wrap">
+                    <span class="prefix">I'm a </span><span class="typed" id="typedText"></span><span
+                        class="cursor">|</span>
+                </div>
+                <p class="hero-desc">Passionate about creating impactful solutions and continuously pushing boundaries.
+                    Welcome to my personal space.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch →</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-num" data-target="5">0</span>+ <span
+                            class="stat-label">Projects</span></div>
+                    <div class="stat"><span class="stat-num" data-target="3">0</span>+ <span
+                            class="stat-label">Certifications</span></div>
+                    <div class="stat"><span class="stat-num" data-target="10">0</span>+ <span
+                            class="stat-label">Skills</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring ring-2"></div>
+                    <div class="avatar-placeholder"><span>M</span></div>
+                    <div class="floating-badge b1">🏆</div>
+                    <div class="floating-badge b2">💻</div>
+                    <div class="floating-badge b3">🚀</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator"><span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Introduction</span>
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="glass-card about-card">
+                    <div class="card-icon">👤</div>
+                    <h3>Who I Am</h3>
+                    <p>A motivated individual with a strong passion for learning and growth. I turn challenges into
+                        opportunities.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>My Mission</h3>
+                    <p>To leverage my skills to create meaningful impact and contribute to innovative solutions.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="card-icon">💡</div>
+                    <h3>My Approach</h3>
+                    <p>Curiosity, determination, continuous learning, and the power of teamwork to achieve extraordinary
+                        results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications -->
+    <section id="qualifications" class="section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Education & Experience</span>
+                <h2>Qualifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="qual-tabs">
+                <button class="qual-tab active" data-tab="education">🎓 Education</button>
+                <button class="qual-tab" data-tab="experience">💼 Experience</button>
+            </div>
+            <div class="qual-content">
+                <div class="timeline active" id="education">
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="glass-card tl-card"><span class="tl-date">2024 – 2028</span>
+                            <h3>Bachelor of Engineering</h3>
+                            <p class="tl-place">YENEPOYA INSTITUTE OF TECHNOLOGY MOODBIDRI</p>
+                            <p>Pursuing undergraduate studies with focus on core subjects.</p>
+                        </div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="glass-card tl-card"><span class="tl-date">2022 – 2024</span>
+                            <h3>Higher Secondary</h3>
+                            <p class="tl-place">NALANDA PU COLLEGE MUDIGERE</p>
+                            <p>Completed 12th standard with excellent grades.</p>
+                        </div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="glass-card tl-card"><span class="tl-date">2012 – 2022</span>
+                            <h3>Secondary Education</h3>
+                            <p class="tl-place">BANAKAL HIGH SCHOOL BANAKAL</p>
+                            <p>Completed 10th standard with distinction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline" id="experience">
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="glass-card tl-card"><span class="tl-date"></span>
+                            <h3></h3>
+                            <p class="tl-place"></p>
+                            <p>.</p>
+                        </div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="glass-card tl-card"><span class="tl-date"></span>
+                            <h3></h3>
+                            <p class="tl-place"></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Recognition</span>
+                <h2>Achievements</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="glass-card ach-card">
+                    <div class="ach-icon">🏆</div>
+                    <h3>Competition Winner</h3>
+                    <p>Won first place in a Robo soccer in college-level competition.</p><span
+                        class="ach-date">2025</span>
+                </div>
+                <div class="glass-card ach-card">
+                    <div class="ach-icon">📜</div>
+                    <h3>Certified Student</h3>
+                    <p>Earned student certification in google.</p><span class="ach-date">2025</span>
+                </div>
+                <div class="glass-card ach-card">
+                    <div class="ach-icon">🎓</div>
+                    <h3>Academic Excellence</h3>
+                    <p>Achieved top grades and received academic honors in 2024-2025 VTU Examinaton.</p><span
+                        class="ach-date">2026</span>
+                </div>
+                <div class="glass-card ach-card">
+                    <div class="ach-icon">🌟</div>
+                    <h3>Leadership Award</h3>
+                    <p>Recognized for exceptional leadership contributions by local bodies.</p><span
+                        class="ach-date">2025</span>
+                </div>
+                <div class="glass-card ach-card">
+                    <div class="ach-icon">🤝</div>
+                    <h3>Community Contributor</h3>
+                    <p>Actively contributed to community and social initiatives.</p><span class="ach-date">2026
+                </div>
+                <div class="glass-card ach-card">
+                    <div class="ach-icon">🚀</div>
+                    <h3>Project Excellence</h3>
+                    <p>Delivered a key project recognized for innovation.</p><span class="ach-date">2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Expertise</span>
+                <h2>Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="glass-card skill-cat">
+                    <h3>💻 Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>HTML & CSS</span><span>90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Python</span><span>75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>React</span><span>70%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card skill-cat">
+                    <h3>🧠 Soft Skills</h3>
+                    <div class="tag-grid">
+                        <span class="tag">Communication</span><span class="tag">Leadership</span><span class="tag">Team
+                            Work</span><span class="tag">Problem Solving</span><span class="tag">Critical
+                            Thinking</span><span class="tag">Time Management</span><span
+                            class="tag">Adaptability</span><span class="tag">Creativity</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-cat">
+                    <h3>🔧 Tools & Tech</h3>
+                    <div class="tag-grid">
+                        <span class="tag">Git & GitHub</span><span class="tag">VS Code</span><span
+                            class="tag">Figma</span><span class="tag">Linux</span><span class="tag">Docker</span><span
+                            class="tag">SQL</span><span class="tag">APIs</span><span class="tag">Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Portfolio</span>
+                <h2>Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="glass-card proj-card">
+                    <div class="proj-img"><span>🌐</span></div>
+                    <div class="proj-info">
+                        <h3>📚 Library WhatsApp Automation</h3>
+                        <p>This project automatically sends WhatsApp reminders to users before their book return date.
+                        </p>
+                        <div class="proj-tags"><span>Python</span><span>Pandas</span><span>PyWhatKit</span></div>
+                    </div>
+                </div>
+                <div class="glass-card proj-card">
+                    <div class="proj-img"><span>📱</span></div>
+                    <div class="proj-info">
+                        <h3>Student Performance Analysis using Python</h3>
+                        <p>This project analyzes student marks using Python and Excel</p>
+                        <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Get In Touch</span>
+                <h2>Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="glass-card contact-item">
+                        <div class="card-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>mohammednaheem07@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="glass-card contact-item">
+                        <div class="card-icon">📍</div>
+                        <div>
+                            <h4>CHAKKAMAKKI</h4>
+                            <p>CHIKMAGLORE, INDIA</p>
+                        </div>
+                    </div>
+                    <div class="glass-card contact-item">
+                        <div class="card-icon">📱</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 96115 89665</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="GitHub">gh</a>
+                        <a href="#" class="social-link" aria-label="Twitter">tw</a>
+                    </div>
+                </div>
+                <form class="glass-card contact-form" id="contactForm">
+                    <div class="form-group"><input type="text" id="formName" placeholder=" " required><label
+                            for="formName">Your Name</label></div>
+                    <div class="form-group"><input type="email" id="formEmail" placeholder=" " required><label
+                            for="formEmail">Your Email</label></div>
+                    <div class="form-group"><input type="text" id="formSubject" placeholder=" " required><label
+                            for="formSubject">Subject</label></div>
+                    <div class="form-group"><textarea id="formMessage" rows="5" placeholder=" "
+                            required></textarea><label for="formMessage">Your Message</label></div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message ✉️</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo"><span class="lb">&lt;</span>M<span class="lb">/&gt;</span></div>
+            <p>Designed & Built with ❤️ by MohamedNaheem</p>
+            <p class="copy">&copy; 2026 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
