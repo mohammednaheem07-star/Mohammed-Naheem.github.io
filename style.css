@@ -164,16 +164,7 @@ img { max-width: 100%; }
     animation: spin 12s linear infinite;
 }
 .ring-2 { inset: -20px; border-color: rgba(0,212,170,0.2); animation-direction: reverse; animation-duration: 18s; }
-@keyframes spin { to { transform: rotate(360deg); } }
-
-.avatar-placeholder {
-    position: absolute; inset: 30px; border-radius: 50%;
-    background: var(--gradient-2); display: flex;
-    align-items: center; justify-content: center;
-    font-family: 'Space Grotesk', sans-serif; font-size: 5rem;
-    font-weight: 800; color: #fff;
-    box-shadow: 0 0 80px rgba(108,99,255,0.3);
-}
+@keyframes spin { to { transform: rotate(360deg); } 
 .floating-badge {
     position: absolute; font-size: 2rem;
     animation: float 3s ease-in-out infinite;
