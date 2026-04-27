@@ -140,7 +140,19 @@ img { max-width: 100%; }
 
 /* Avatar */
 .hero-visual { display: flex; justify-content: center; align-items: center; }
-.avatar-container { position: relative; width: 320px; height: 320px; }
+.avatar-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.avatar-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
 .avatar-ring {
     position: absolute; inset: 0; border-radius: 50%;
     border: 2px solid rgba(108,99,255,0.3);
